@@ -1,2 +1,12 @@
-package com.snsproject.sns_service.controller.request;public class UserJoinRequest {
+package com.snsproject.sns_service.controller.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class UserJoinRequest {
+
+    private String userName;
+    private String password;
 }
