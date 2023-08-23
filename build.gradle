@@ -64,5 +64,4 @@ task cleanFrontEnd(type: Delete) {
 //npmBuild.dependsOn npmInstall
 //copyFrontEnd.dependsOn npmBuild
 //compileJava.dependsOn copyFrontEnd
-//
 //clean.dependsOn cleanFrontEnd
