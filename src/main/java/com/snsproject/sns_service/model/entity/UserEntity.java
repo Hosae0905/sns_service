@@ -41,7 +41,7 @@ public class UserEntity {
     private Timestamp registeredAt;
 
     @Column(name = "updated_at")
-    private Timestamp updated_at;
+    private Timestamp updatedAt;
 
     @Column(name = "deleted_at")
     private Timestamp deletedAt;
@@ -53,7 +53,7 @@ public class UserEntity {
 
     @PreUpdate
     void updatedAt() {
-        this.updated_at = Timestamp.from(Instant.now());
+        this.updatedAt = Timestamp.from(Instant.now());
     }
 
     public static UserEntity of(String userName, String userPassword) {

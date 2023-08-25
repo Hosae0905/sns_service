@@ -16,7 +16,7 @@ public class Comment {
     private String userName;
     private Integer postId;
     private Timestamp registeredAt;
-    private Timestamp updated_at;
+    private Timestamp updatedAt;
     private Timestamp deletedAt;
 
     public static Comment fromEntity(CommentEntity entity) {
@@ -26,7 +26,7 @@ public class Comment {
                 entity.getUser().getUserName(),
                 entity.getPost().getId(),
                 entity.getRegisteredAt(),
-                entity.getUpdated_at(),
+                entity.getUpdatedAt(),
                 entity.getDeletedAt()
         );
     }

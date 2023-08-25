@@ -33,7 +33,7 @@ public class LikeEntity {
     private Timestamp registeredAt;
 
     @Column(name = "updated_at")
-    private Timestamp updated_at;
+    private Timestamp updatedAt;
 
     @Column(name = "deleted_at")
     private Timestamp deletedAt;
@@ -45,7 +45,7 @@ public class LikeEntity {
 
     @PreUpdate
     void updatedAt() {
-        this.updated_at = Timestamp.from(Instant.now());
+        this.updatedAt = Timestamp.from(Instant.now());
     }
 
     public static LikeEntity of (UserEntity userEntity, PostEntity postEntity) {

@@ -20,7 +20,7 @@ public class PostResponse {
 
     private Timestamp registeredAt;
 
-    private Timestamp updated_at;
+    private Timestamp updatedAt;
 
     private Timestamp deletedAt;
 
@@ -31,7 +31,7 @@ public class PostResponse {
                 post.getBody(),
                 UserResponse.formUser(post.getUser()),
                 post.getRegisteredAt(),
-                post.getUpdated_at(),
+                post.getUpdatedAt(),
                 post.getDeletedAt()
 
         );

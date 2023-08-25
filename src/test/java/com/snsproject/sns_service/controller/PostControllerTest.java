@@ -36,11 +36,12 @@ public class PostControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @MockBean
+    private PostService postService;
+
     @Autowired
     private ObjectMapper objectMapper;
 
-    @MockBean
-    private PostService postService;
 
     @Test
     @WithMockUser
@@ -60,7 +61,6 @@ public class PostControllerTest {
     @Test
     @WithAnonymousUser
     void 포스트작성시_로그인하지않은경우() throws Exception {
-
         String title = "title";
         String body = "body";
 
