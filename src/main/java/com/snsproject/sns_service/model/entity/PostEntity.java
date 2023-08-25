@@ -35,7 +35,7 @@ public class PostEntity {
     @Column(name = "registered_at")
     private Timestamp registeredAt;
 
-    @Column(name = "updatedAt")
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 
     @Column(name = "deleted_at")

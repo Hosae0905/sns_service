@@ -58,6 +58,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         } catch (RuntimeException e) {
             log.error("Error occurs while validating. {}", e.toString());
             filterChain.doFilter(request, response);
+            return;
         }
 
         filterChain.doFilter(request, response);
